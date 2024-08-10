@@ -5,9 +5,72 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f0f0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.customer-list {
+  width: 30%;
+  overflow-y: scroll;
+  background-color: #fff;
+  scrollbar-width: none;
+}
+
+.customer-card {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.customer-card>h3,p{
+ margin: 5px 0;
+}
+
+.customer-card.selected {
+  background-color: #e0e0e0;
+  border-right: 3px solid gray;
+}
+
+.customer-details {
+  flex: 1;
+  padding: 2% 6%;
+  
+}
+
+.customer-details>p{
+  margin: 35px 0px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.photo-grid img {
+  width: 300px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.headingDetails{
+  display: flex;
+  justify-content: center;
+}
+.headingDetails>h2{
+  margin: 0;
+}
+
+.headingDetails>p{
+  margin-left: 10px;
 }
